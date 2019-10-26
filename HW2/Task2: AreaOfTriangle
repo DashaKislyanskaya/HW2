@@ -4,7 +4,6 @@ public class Task2 {
 
 	public static void main(String[] args) {
 
-		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Введите сторону a ");
 		int a = sc.nextInt();
@@ -12,7 +11,8 @@ public class Task2 {
 		int b = sc.nextInt();
 		System.out.print("Введите сторону c ");
 		int c = sc.nextInt();
-		double S = (a+b+c)/2.0; 
+		double p = (a+b+c)/2.0; 
+		double S = Math.sqrt((p*(p-a)*(p-b)*(p-c)));
 		System.out.println("Площадь треугольника = " + S);
 	}
 }
