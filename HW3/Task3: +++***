@@ -15,13 +15,19 @@ public class Task3 {
 		int h = sc.nextInt();
 
 		for (int k = 0; k < h; k++) {
-			for (int d = 0; d < m / 2; d++) {
-				for (int j = 0; j < n; j++) {
-					System.out.print("+");
+			int j = 0;
+			while (j < m) {
+				if (j % 2 == 0) {
+					for (int i = 0; i < n; i++) {
+						System.out.print("+");
+					}
 				}
-				for (int j = 0; j < n; j++) {
-					System.out.print("*");
+				if (j % 2 != 0) {
+					for (int i = 0; i < n; i++) {
+						System.out.print("*");
+					}
 				}
+				j++;
 			}
 			System.out.print("\n");
 		}
